@@ -44,13 +44,13 @@ const scenes = {
   },
 
   entrance: {
-    title: "Location: Entrance",
-    character: "Interviewee:Neighbor",
-    text: "well what I remember...",
+    title: "Location: Living Room",
+    character: "Interviewee:Player",
+    text: "Mom! Where are my cleats and gear? I can't find them anywhere!",
     choices: [
       {
-        text: "Ask about the dog",
-        nextScene: "backyard"
+        text: "Go to Sister's room",
+        nextScene: "Sisters room"
       },
          {
         text: "Ask about the neighbor",
@@ -59,9 +59,9 @@ const scenes = {
     ]
   },
 
-  hallway: {
-    title: "The Hallway",
-    text: "The hallway is dark and silent.",
+  "sister's room": {
+    title: "The Sister's Room",
+    text: "The room is cluttered with toys and clothes.",
     choices: [
       {
         text: "backyard",
