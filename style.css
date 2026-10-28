@@ -1,0 +1,66 @@
+.heading {
+    background-color: #b9df9b;
+    border: 3px solid #315b2b;
+    color: #244522;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    padding: 12px;
+    text-align: center;
+}
+
+.card {
+    background-color: #f3f7e9;
+    border: 2px solid #668854;
+    border-radius: 6px;
+    margin: 14px 0;
+    padding: 16px;
+    text-align: center;
+}
+
+#time-display,
+#inventory-display {
+    background-color: #fff0bd;
+    border: 2px solid #b28a32;
+    color: #493a16;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
+}
+
+body {
+    background-color: #e7efdd;
+    color: #292d25;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 850px;
+    padding: 0 16px;
+}
+
+img {
+    border: 3px solid #668854;
+    border-radius: 12px;
+    display: block;
+    height: auto;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+button {
+    background-color: #b9df9b;
+    border: 2px solid #315b2b;
+    border-radius: 6px;
+    color: #244522;
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px 12px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8fbd72;
+}
