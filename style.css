@@ -1,48 +1,83 @@
 .heading {
-    background-color: #b9df9b;
-    border: 3px solid #315b2b;
-    color: #244522;
+    background-color: #dceecf;
+    border: 2px solid #79a85e;
+    color: #264821;
     font-family: "Trebuchet MS", Arial, sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 1px;
-    word-spacing: 3px;
     padding: 12px;
-    text-align: center;
+    text-align: left;
 }
 
 .card {
-    background-color: #f3f7e9;
-    border: 2px solid #668854;
-    border-radius: 6px;
+    background-color: #ffffff;
+    border: 2px solid #d6bd64;
     margin: 14px 0;
     padding: 16px;
-    text-align: center;
+    text-align: left;
 }
 
 #time-display,
 #inventory-display {
-    background-color: #fff0bd;
-    border: 2px solid #b28a32;
-    color: #493a16;
+    background-color: #edf5e6;
+    border: 2px solid #a6c58e;
+    color: #264821;
+    display: inline-block;
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 6px;
-    text-align: center;
+    padding: 8px 12px;
+    text-align: left;
 }
 
 body {
-    background-color: #e7efdd;
-    color: #292d25;
+    background-color: #ffffff;
+    color: #222222;
     font-family: "Trebuchet MS", Arial, sans-serif;
     margin: 20px auto;
     max-width: 850px;
     padding: 0 16px;
 }
 
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0 16px 0 0;
+    padding: 0;
+}
+
+nav a {
+    background-color: #e8f3df;
+    border: 1px solid #91b879;
+    color: #315b2b;
+    display: inline-block;
+    padding: 5px 8px;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#character-name {
+    color: #315b2b;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+#scene-text {
+    line-height: 1.6;
+}
+
+#choices-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
 img {
-    border: 3px solid #668854;
-    border-radius: 12px;
+    border: 3px solid #d6bd64;
     display: block;
     height: auto;
     margin: 20px auto;
@@ -50,17 +85,30 @@ img {
 }
 
 button {
-    background-color: #b9df9b;
-    border: 2px solid #315b2b;
-    border-radius: 6px;
-    color: #244522;
+    background-color: #dceecf;
+    border: 2px solid #79a85e;
+    color: #264821;
     cursor: pointer;
-    margin: 5px;
-    padding: 8px 12px;
+    margin: 0;
+    padding: 10px 12px;
     font-family: "Trebuchet MS", Arial, sans-serif;
-    font-weight: bold;
+    max-width: 100%;
+    text-align: left;
 }
 
 button:hover {
-    background-color: #8fbd72;
+    background-color: #c8e3b4;
+}
+
+.play-link {
+    background-color: #dceecf;
+    border: 2px solid #79a85e;
+    color: #264821;
+    display: inline-block;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+.play-link:hover {
+    background-color: #c8e3b4;
 }

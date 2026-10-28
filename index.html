@@ -1,65 +1,28 @@
-<!-- Add your index page here --> 
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Missing Soccer Gear</title>
     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <h1 class="heading">Find the soccer cleats and shin guards</h1>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul><li><a href="index.html">Home</a></li></ul>
+            <ul><li><a href="game.html">Play</a></li></ul>
+            <ul><li><a href="about.html">About</a></li></ul>
+        </nav>
+    </header>
 
-    <img src="images.jpg" alt="Soccer cleats and shin guards">
-    <div class="card">
-      <h2>Setting</h2>
-      <p>At home, a soccer player has a championship game today but is missing his cleats and shin guards. His team is counting on him, and he has 4 minutes to find his gear.</p>
-    </div>
-
-   <p><a href="about.html">About Me</a></p>
-    <p><a href="contact.html">contact Me</a></p>
-
-
-
-<div class="card">
-<label for="Firstname"> first  name  : </label>
-   <input type="text" id="Firstname" name="Firstname" placeholder="Enter your first name">
-   <br>
-   <label for="Lastname"> Last name  : </label>
-   <input type="text" id="Lastname" name="Lastname" placeholder="Enter your last name">
-   <br>
-   <label for="cleats"> Where to look first  : </label>
-   <select name="cleats" id="cleats">
-      <option value="select a location">Select a location</option>
-      <option value="sisters room">sisters room</option>
-      <option value="bathroom">bathroom</option>
-      <option value="green">living room</option>
-      </select>
-
-   <br><br>
-
-    <input type="radio" id="confirm" name="confirm" value="confirm">
-        <label for="confirm">confirm</label>
-        
-        <br><br>
-
-   <input type="submit" value="Submit">
-
-
-
-
-   <form>
-
-
-
-
-
-
-
-
-
-</form>
- </div>
-
- </body>
- </html>
+    <main>
+        <h1 class="heading">The Missing Soccer Gear</h1>
+        <img src="images.jpg" alt="Soccer cleats and shin guards">
+        <section class="card">
+            <h2>What's the game about?</h2>
+            <p>I have a soccer game soon, but I can't find my cleats or shin guards. Help me look before it's time to leave!</p>
+            <a class="play-link" href="game.html">Play the game</a>
+        </section>
+    </main>
+</body>
+</html>
