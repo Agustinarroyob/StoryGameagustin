@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Find the Cleats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body class="bg-white">
+    <main class="container py-4">
+      <h1 class="display-6 bg-success-subtle border border-success p-3">Help Find the Soccer Cleats</h1>
+      <p class="mt-3">The game starts soon, and one cleat is missing. Take a look at the pictures and pick where we should search first.</p>
+
+      <section class="my-4" aria-label="Pictures of the soccer cleats">
+        <div id="shoeCarousel" class="carousel slide border border-success border-3 p-2" aria-label="Soccer cleat pictures">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#shoeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First cleat"></button>
+            <button type="button" data-bs-target="#shoeCarousel" data-bs-slide-to="1" aria-label="Second cleat"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <img src="cleat-left.jpg" class="img-fluid d-block mx-auto" alt="First blue soccer cleat" style="height: 280px; width: auto;">
+              <p class="mb-0 mt-2">One of the cleats</p>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="cleat-right.jpg" class="img-fluid d-block mx-auto" alt="Second blue soccer cleat" style="height: 280px; width: auto;">
+              <p class="mb-0 mt-2">The other cleat</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#shoeCarousel" data-bs-slide="prev" aria-label="Previous picture">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#shoeCarousel" data-bs-slide="next" aria-label="Next picture">
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <form id="search-form" class="border border-success p-3">
+        <label for="search-place" class="form-label">Where should we look first?</label>
+        <select id="search-place" class="form-select mb-3" required>
+          <option value="" selected disabled>Pick a place</option>
+          <option>Living room</option>
+          <option>Bedroom</option>
+          <option>Garage</option>
+        </select>
+        <button type="submit" class="btn btn-success">Choose this place</button>
+        <button type="button" class="btn btn-primary btn-lg">
+  Check the Closet
+    </button>
+
+    <button type="button" class="btn btn-danger btn-sm" disabled>
+  Already Checked
+    </button>
+      
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
