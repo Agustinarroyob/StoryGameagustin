@@ -113,3 +113,51 @@ button:hover {
 .play-link:hover {
     background-color: #c8e3b4;
 }
+#face {
+  width: 220px;
+  height: 260px;
+  background-color: yellow;
+  border: 6px solid yellow;
+  margin: 50px auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.eye {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border: 3px solid black;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.pupil {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  margin: 20px auto;
+}
+
+#mouth {
+  width: 160px;
+  height: 90px;
+  background-color: black;
+  margin: 20px auto 0;
+  padding-top: 12px;
+}
+
+.tooth {
+  width: 18px;
+  height: 22px;
+  background-color: white;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+#tongue {
+  width: 50px;
+  height: 35px;
+  background-color: red;
+  margin: 12px auto 0;
+}
