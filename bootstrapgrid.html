@@ -8,70 +8,108 @@
 
   <style>
     .box {
-      border: 1px solid #333333;
-      height: 90px;
+      height: 80px;
       text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding-top: 25px;
+      border: 2px solid black;
       font-weight: bold;
     }
     .red { background-color: red; color: white; }
-    .orange { background-color: orange; color: black; }
-    .yellow { background-color: yellow; color: black; }
+    .orange { background-color: orange; }
+    .yellow { background-color: yellow; }
     .green { background-color: green; color: white; }
     .blue { background-color: blue; color: white; }
     .purple { background-color: purple; color: white; }
-    .pink { background-color: pink; color: black; }
+    .pink { background-color: pink; }
     .black { background-color: black; color: white; }
     .gray { background-color: gray; color: white; }
   </style>
 </head>
 <body>
 
-  <div class="container mt-4">
-    <h3 class="text-center mb-3">Colors</h3>
-
-    <!-- Row 1 -->
-    <div class="row g-2">
-      <div class="col-4">
-        <div class="box red">Red</div>
-      </div>
-      <div class="col-4">
-        <div class="box orange">Orange</div>
-      </div>
-      <div class="col-4">
-        <div class="box yellow">Yellow</div>
-      </div>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">my color chart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://google.com">google</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://youtube.com">youtube</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            more
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">red</a></li>
+            <li><a class="dropdown-item" href="#">blue</a></li>
+            <li><a class="dropdown-item" href="#">green</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">idk yet</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <!-- Row 2 -->
-    <div class="row g-2 mt-2">
-      <div class="col-4">
-        <div class="box green">Green</div>
-      </div>
-      <div class="col-4">
-        <div class="box blue">Blue</div>
-      </div>
-      <div class="col-4">
-        <div class="box purple">Purple</div>
-      </div>
+<br>
+
+<div class="container">
+  <h3 class="text-center">Colors</h3>
+  <br>
+
+  <div class="row g-2">
+    <div class="col-4">
+      <div class="box red">Red</div>
     </div>
-
-    <!-- Row 3 -->
-    <div class="row g-2 mt-2">
-      <div class="col-4">
-        <div class="box pink">Pink</div>
-      </div>
-      <div class="col-4">
-        <div class="box black">Black</div>
-      </div>
-      <div class="col-4">
-        <div class="box gray">Gray</div>
-      </div>
+    <div class="col-4">
+      <div class="box orange">Orange</div>
     </div>
-
+    <div class="col-4">
+      <div class="box yellow">Yellow</div>
+    </div>
   </div>
 
+  <br>
+
+  <div class="row g-2">
+    <div class="col-4">
+      <div class="box green">Green</div>
+    </div>
+    <div class="col-4">
+      <div class="box blue">Blue</div>
+    </div>
+    <div class="col-4">
+      <div class="box purple">Purple</div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row g-2">
+    <div class="col-4">
+      <div class="box pink">Pink</div>
+    </div>
+    <div class="col-4">
+      <div class="box black">Black</div>
+    </div>
+    <div class="col-4">
+      <div class="box gray">Gray</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
