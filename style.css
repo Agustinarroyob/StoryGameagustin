@@ -113,6 +113,44 @@ button:hover {
 .play-link:hover {
     background-color: #c8e3b4;
 }
+
+nav.navbar {
+    margin: -20px -16px 0;
+    padding: 8px 0;
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+    background: transparent;
+    border: 0;
+    color: #315b2b;
+    text-decoration: none;
+}
+
+nav.navbar .navbar-brand:hover,
+nav.navbar .nav-link:hover {
+    color: #244522;
+    text-decoration: underline;
+}
+
+nav.navbar .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar .navbar-toggler {
+    background: transparent;
+    border: 1px solid #888888;
+    padding: 6px 10px;
+}
+
+.home-image,
+.about-image {
+    margin: 0;
+    width: 100%;
+}
 #face {
   width: 220px;
   height: 260px;

@@ -3,60 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Play the Soccer Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
 </head>
 <body>
-    <header>
-      <nav>
-            <ul> 
-                <li><a href="index.html">Home</a></li>
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Soccer Game</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Open menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="siteNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="game.html">Play</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            </ul>
-            <ul> 
-                <li><a href="game.html">Play</a></li>
-            </ul>
-            <ul> 
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-    <header>
-        <h1 id="scene-title" class="heading">  </h1>
-        <h2 id="character-name">  </h2>
-    </header>
-    
-    <section>
-    <p id="scene-text">     </p>
-
-    </section>
-
-    <section>
-        <div id="choices-container" class="card"> </div>
-    </section>   
-        
-    <section class="card">
-        <p> Time remaining:</p>
-        <ul>
-            <li id="time-display">4 minutes</li>
-        </ul>
-
-        <p> Inventory:</p>
-        <ul>
-            <li id="inventory-display"> </li>
-        </ul>
-
-        <p id="message-display"></p>
-    </section>
-
-
+    <main class="container py-4">
+        <div class="row g-3">
+            <div class="col-md-8">
+                <header>
+                    <h1 id="scene-title" class="heading"></h1>
+                    <h2 id="character-name"></h2>
+                </header>
+                <p id="scene-text" class="border rounded p-3"></p>
+                <section id="choices-container" aria-label="Game choices"></section>
+            </div>
+            <div class="col-md-4">
+                <aside class="border rounded p-3 bg-light">
+                    <p>Time remaining:</p>
+                    <p><span id="time-display" class="badge text-bg-success">4 minutes</span></p>
+                    <p>Inventory:</p>
+                    <p><span id="inventory-display" class="badge text-bg-secondary">Nothing found yet</span></p>
+                    <p id="message-display" class="mb-0"></p>
+                </aside>
+            </div>
+        </div>
     </main>
-    <footer>
-
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
