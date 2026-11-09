@@ -36,9 +36,7 @@ const scenes = {
       const choices = locations
         .filter((location) => !searchedLocations.has(location.id))
         .map((location) => ({
-          text: location.item
-            ? `Search ${location.label} (find ${location.item}; no time lost)`
-            : `Search ${location.label}${location.timeCost ? ` (-${location.timeCost} minute)` : ""}`,
+          text: `Search ${location.label}`,
           action: () => searchLocation(location)
         }));
 
@@ -91,7 +89,7 @@ const scenes = {
       if (!inventory.has("Shin guards")) {
         if (!cabinetsSearched) {
           choices.push({
-            text: "Search the cabinets (-1 minute; no shin guards)",
+            text: "Search the cabinets",
             action() {
               cabinetsSearched = true;
               if (!spendTime(1)) {
@@ -103,7 +101,7 @@ const scenes = {
           });
         }
         choices.push({
-          text: "Search the fridge (find shin guards; no time lost)",
+          text: "Search the fridge",
           action() {
             inventory.add("Shin guards");
             updateDisplays();
@@ -167,6 +165,7 @@ function updateScene(sceneName) {
   choices.forEach((choice) => {
     const button = document.createElement("button");
     button.type = "button";
+    button.className = "btn btn-success";
     button.textContent = choice.text;
     button.addEventListener("click", () => {
       if (choice.action) {

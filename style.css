@@ -18,18 +18,6 @@
     text-align: left;
 }
 
-#time-display,
-#inventory-display {
-    background-color: #edf5e6;
-    border: 2px solid #a6c58e;
-    color: #264821;
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 8px 12px;
-    text-align: left;
-}
-
 body {
     background-color: #ffffff;
     color: #222222;
@@ -39,23 +27,12 @@ body {
     padding: 0 16px;
 }
 
-nav ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0 16px 0 0;
-    padding: 0;
-}
-
-nav a {
-    background-color: #e8f3df;
-    border: 1px solid #91b879;
+.site-nav a {
     color: #315b2b;
-    display: inline-block;
-    padding: 5px 8px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-nav a:hover {
+.site-nav a:hover {
     text-decoration: underline;
 }
 
@@ -83,67 +60,6 @@ img {
     height: auto;
     margin: 20px auto;
     max-width: 100%;
-}
-
-button {
-    background-color: #dceecf;
-    border: 2px solid #79a85e;
-    color: #264821;
-    cursor: pointer;
-    margin: 0;
-    padding: 10px 12px;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    max-width: 100%;
-    text-align: left;
-}
-
-button:hover {
-    background-color: #c8e3b4;
-}
-
-.play-link {
-    background-color: #dceecf;
-    border: 2px solid #79a85e;
-    color: #264821;
-    display: inline-block;
-    padding: 10px 14px;
-    text-decoration: none;
-}
-
-.play-link:hover {
-    background-color: #c8e3b4;
-}
-
-nav.navbar {
-    margin: -20px -16px 0;
-    padding: 8px 0;
-}
-
-nav.navbar .navbar-brand,
-nav.navbar .nav-link {
-    background: transparent;
-    border: 0;
-    color: #315b2b;
-    text-decoration: none;
-}
-
-nav.navbar .navbar-brand:hover,
-nav.navbar .nav-link:hover {
-    color: #244522;
-    text-decoration: underline;
-}
-
-nav.navbar .navbar-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav.navbar .navbar-toggler {
-    background: transparent;
-    border: 1px solid #888888;
-    padding: 6px 10px;
 }
 
 .home-image,
